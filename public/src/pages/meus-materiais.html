@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meus materiais · DIY experimentos caseiros</title>
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/comum/section-navegacao.css">
+  <link rel="stylesheet" href="/src/css/comum/section-base.css">
+  <link rel="stylesheet" href="/src/css/comum/section-topo.css">
+  <link rel="stylesheet" href="/src/css/comum/section-botoes.css">
+  <link rel="stylesheet" href="/src/css/comum/section-busca.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cartoes.css">
+  <link rel="stylesheet" href="/src/css/comum/section-paineis.css">
+  <link rel="stylesheet" href="/src/css/comum/section-experimento.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cuidado.css">
+  <link rel="stylesheet" href="/src/css/comum/section-rodape.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cuidado-fino.css">
+  <link rel="stylesheet" href="/src/css/comum/section-responsivo.css">
+  <link rel="stylesheet" href="/src/css/comum/section-icones.css">
+  <link rel="stylesheet" href="/src/css/materiais/section-lista.css">
+  <link rel="stylesheet" href="/src/css/materiais/section-maos.css">
+  <link rel="stylesheet" href="/src/css/materiais/section-dicas.css">
+  <link rel="stylesheet" href="/src/css/materiais/section-responsivo.css">
+  <link rel="stylesheet" href="/src/css/materiais/section-ajustes.css">
+</head>
+<body>
+  <header class="container-nav">
+    <a class="nav-marca" href="/index.html">
+      <span class="nav-logo">DIY experimentos caseiros</span>
+    </a>
+
+    <nav class="container-links">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link" href="/src/pages/experimentos.html">Experimentos</a>
+      <a class="nav-link nav-link-ativo" href="/src/pages/meus-materiais.html">Meus materiais</a>
+      <span class="nav-acesso">
+        <a href="/src/pages/login.html">Entrar</a>
+        <span>/</span>
+        <a href="/src/pages/cadastro.html">Criar conta</a>
+      </span>
+    </nav>
+
+    <a class="nav-feitos" href="/src/pages/feitos.html">
+      <i class="px px-feito"></i>
+      <span>Projetos feitos</span>
+      <span class="nav-contador">0</span>
+    </a>
+  </header>
+
+  <main class="wrap">
+    <section class="topo">
+      <p class="caminho"><a href="/src/pages/meus-materiais.html">Minha bancada</a> / Meus materiais</p>
+      <div class="titulo">
+        <div>
+          <h1>Meus materiais <span class="tag" id="total">12 ITENS</span></h1>
+          <p class="sub">Sua próxima ideia começa com o que você já tem. Organize, ajuste e experimente.</p>
+        </div>
+      </div>
+      <p class="status"><b>●</b> <b>INVENTÁRIO SALVO</b> · As quantidades são salvas automaticamente.</p>
+    </section>
+
+    <div class="barra">
+      <label class="busca">
+        <i class="px px-busca"></i>
+        <input id="busca" type="search" placeholder="Buscar no meu inventário..." aria-label="Buscar no meu inventário">
+        <kbd>/</kbd>
+      </label>
+    </div>
+
+    <div class="grid-main">
+      <section>
+        <div class="cab-col">
+          <b id="cont">SEU INVENTÁRIO · 12 MATERIAIS</b>
+          <span>Ajuste com − e + ou edite o número</span>
+        </div>
+        <div class="cards" id="materiais"></div>
+
+        <div class="maos">
+          <div>
+            <b>Meus utensílios</b>
+            <p>Utensílios reutilizáveis, sem controle de quantidade.</p>
+          </div>
+          <span class="chip"><i class="px px-check"></i>Tesoura</span>
+          <span class="chip"><i class="px px-check"></i>Colher</span>
+          <span class="chip"><i class="px px-check"></i>Lápis</span>
+        </div>
+      </section>
+
+      <aside class="lateral">
+        <section class="painel">
+          <p class="modo"><i class="px px-painel"></i> MODO EXPERIMENTAR</p>
+          <p class="num" id="prontos">03</p>
+          <h2>experimentos possíveis</h2>
+          <ul id="lista-prontos"></ul>
+          <a class="btn azul" href="/src/pages/experimentos.html"><i class="px px-ver"></i> Ver experimentos possíveis</a>
+        </section>
+
+        <section class="dica">
+          <h4><i>i</i> O que vira o quê</h4>
+          <p>Antes de jogar fora, olhe de novo. Boa parte do que sobra em casa já é peça de projeto.</p>
+          <ul class="vira">
+            <li><b>Tampinha</b><span>roda do carrinho</span></li>
+            <li><b>Palito de churrasco</b><span>eixo do carrinho</span></li>
+            <li><b>Garrafa PET</b><span>corpo do foguete</span></li>
+            <li><b>Papelão</b><span>base do vulcão e do labirinto</span></li>
+          </ul>
+        </section>
+
+        <div class="dica amarela lema"><i class="px px-lema"></i><span>MENOS DESCARTE.<br>MAIS DESCOBERTA.</span></div>
+      </aside>
+    </div>
+  </main>
+
+  <section class="container-cuidado">
+    <img class="cuidado-icone" src="/assets/icones/cuidado.png" alt="">
+
+    <div class="cuidado-texto">
+      <h2 class="cuidado-titulo">Curiosidade e cuidado andam juntos.</h2>
+      <p class="cuidado-aviso">Leia o projeto inteiro antes de começar. Crianças devem escolher a atividade com um responsável e ter supervisão adulta. Não ingira misturas. Cortes e perfurações ficam com um adulto.</p>
+    </div>
+  </section>
+
+  <footer class="container-rodape">
+    <div class="rodape-topo">
+      <div class="rodape-marca">
+        <span class="rodape-logo">DIY experimentos caseiros</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/js/pages/dados.js"></script>
+  <script src="/src/js/pages/materiais.js"></script>
+</body>
+</html>

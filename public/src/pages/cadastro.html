@@ -4,8 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cadastro · DIY experimentos caseiros</title>
-  <link rel="stylesheet" href="/global.css">
-  <link rel="stylesheet" href="/pages/compartilhado/css/acesso.css">
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-pagina.css">
+  <link rel="stylesheet" href="/src/css/cadastro/section-main.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-cartao.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-formulario.css">
+  <link rel="stylesheet" href="/src/css/cadastro/section-requisitos.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-ilustracoes.css">
+  <link rel="stylesheet" href="/src/css/comum/section-rodape.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cuidado-fino.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-responsivo.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-erros.css">
 </head>
 <body>
   <div class="container-pagina-acesso">
@@ -99,29 +108,32 @@
         </form>
 
         <p class="cartao-alternativa">Já tem uma conta?</p>
-        <a class="cartao-link" href="/pages/login/html/login.html">Fazer login</a>
+        <a class="cartao-link" href="/src/pages/login.html">Fazer login</a>
       </section>
     </main>
 
     <div class="ilustracao ilustracao-esquerda">
-      <img class="ilustracao-arte" src="/imagens/album-garrafa.svg" width="102.4" height="160" alt="">
+      <img class="ilustracao-arte" src="/assets/imagens/album-garrafa.png" width="102.4" height="160" alt="">
       <span class="ilustracao-legenda">UM MATERIAL</span>
     </div>
 
     <div class="ilustracao ilustracao-direita">
-      <img class="ilustracao-arte" src="/imagens/hero-foguete.svg" width="94.81" height="160" alt="">
+      <img class="ilustracao-arte" src="/assets/imagens/hero-foguete.png" width="94.81" height="160" alt="">
       <span class="ilustracao-legenda">UMA POSSIBILIDADE</span>
     </div>
 
-    <footer class="container-rodape-acesso">
-      <p class="rodape-mensagem">Feito para quem gosta de perguntar e experimentar.</p>
-      <p class="rodape-creditos">DIY · Experimentos caseiros</p>
+    <footer class="container-rodape">
+      <div class="rodape-topo">
+        <div class="rodape-marca">
+          <span class="rodape-logo">DIY experimentos caseiros</span>
+        </div>
+      </div>
     </footer>
 
   </div>
 
-  <script src="/pages/compartilhado/js/acesso.js"></script>
-  <script src="/pages/compartilhado/js/validacoes.js"></script>
-  <script src="/pages/cadastro/js/cadastro.js"></script>
+  <script src="/src/js/pages/acesso.js"></script>
+  <script src="/src/js/pages/validacoes.js"></script>
+  <script src="/src/js/pages/cadastro.js"></script>
 </body>
 </html>

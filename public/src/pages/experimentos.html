@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experimentos · DIY experimentos caseiros</title>
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/comum/section-navegacao.css">
+  <link rel="stylesheet" href="/src/css/comum/section-base.css">
+  <link rel="stylesheet" href="/src/css/comum/section-topo.css">
+  <link rel="stylesheet" href="/src/css/comum/section-botoes.css">
+  <link rel="stylesheet" href="/src/css/comum/section-busca.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cartoes.css">
+  <link rel="stylesheet" href="/src/css/comum/section-feito.css">
+  <link rel="stylesheet" href="/src/css/comum/section-paineis.css">
+  <link rel="stylesheet" href="/src/css/comum/section-experimento.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cuidado.css">
+  <link rel="stylesheet" href="/src/css/comum/section-rodape.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cuidado-fino.css">
+  <link rel="stylesheet" href="/src/css/comum/section-responsivo.css">
+  <link rel="stylesheet" href="/src/css/comum/section-icones.css">
+  <link rel="stylesheet" href="/src/css/experimentos/section-bancada.css">
+  <link rel="stylesheet" href="/src/css/experimentos/section-resultado.css">
+  <link rel="stylesheet" href="/src/css/experimentos/section-secao.css">
+  <link rel="stylesheet" href="/src/css/experimentos/section-responsivo.css">
+  <link rel="stylesheet" href="/src/css/experimentos/section-icones.css">
+</head>
+<body>
+  <header class="container-nav">
+    <a class="nav-marca" href="/index.html">
+      <span class="nav-logo">DIY experimentos caseiros</span>
+    </a>
+
+    <nav class="container-links">
+      <a class="nav-link" href="/index.html">Home</a>
+      <a class="nav-link nav-link-ativo" href="/src/pages/experimentos.html">Experimentos</a>
+      <a class="nav-link" href="/src/pages/meus-materiais.html">Meus materiais</a>
+      <span class="nav-acesso">
+        <a href="/src/pages/login.html">Entrar</a>
+        <span>/</span>
+        <a href="/src/pages/cadastro.html">Criar conta</a>
+      </span>
+    </nav>
+
+    <a class="nav-feitos" href="/src/pages/feitos.html">
+      <i class="px px-feito"></i>
+      <span>Projetos feitos</span>
+      <span class="nav-contador">0</span>
+    </a>
+  </header>
+
+  <main class="wrap">
+    <section class="topo">
+      <p class="caminho"><a href="/src/pages/meus-materiais.html">Minha bancada</a> / Experimentos</p>
+      <div class="titulo">
+        <div>
+          <h1>Experimentos <span class="tag">06 IDEIAS</span></h1>
+          <p class="sub">Descubra o que é possível criar com o que você já tem. Ciência, arte e engenharia do jeito caseiro.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="barra">
+      <label class="busca">
+        <i class="px px-busca"></i>
+        <input id="busca" type="search" placeholder='Buscar experimento... tente "ponte", "cores"' aria-label="Buscar experimento">
+        <kbd>/</kbd>
+      </label>
+    </div>
+
+    <div class="grid-exp">
+      <aside>
+        <section class="bancada">
+          <h2>O que você tem? <em id="n-mat">12</em></h2>
+          <ul id="bancada"></ul>
+          <p class="t">Meus utensílios</p>
+          <div class="chips">
+            <span class="chip"><i class="px px-check"></i>Tesoura</span>
+            <span class="chip"><i class="px px-check"></i>Colher</span>
+            <span class="chip"><i class="px px-check"></i>Lápis</span>
+          </div>
+          <a class="btn azul" id="atualizar" href="/src/pages/meus-materiais.html"><i class="px px-atualizar"></i> Adicionar materiais</a>
+          <p class="status"><b>●</b> RESULTADOS ATUALIZADOS</p>
+        </section>
+      </aside>
+
+      <section>
+        <div class="resultado">
+          <h2>Suas possibilidades <span class="tag" id="qtd-exp">6 EXPERIMENTOS</span></h2>
+          <div class="filtros" id="filtros">
+            <button class="on" type="button" data-cat="TODOS">TODOS</button>
+            <button type="button" data-cat="CIÊNCIA">CIÊNCIA</button>
+            <button type="button" data-cat="ARTE">ARTE</button>
+            <button type="button" data-cat="ENGENHARIA">ENGENHARIA</button>
+            <button type="button" data-cat="FÍSICA">FÍSICA</button>
+          </div>
+        </div>
+
+        <p class="secao verde" id="secao-ok"><i></i>SUA BANCADA E AS POSSIBILIDADES <span id="n-ok">· 3 com tudo à mão · 3 ainda faltam materiais</span></p>
+        <div class="cards" id="ok"></div>
+
+        <p class="fim" id="fim">POR ENQUANTO, ESTAS SÃO SUAS 6 POSSIBILIDADES. ADICIONE MATERIAIS PARA DESCOBRIR MAIS.</p>
+      </section>
+    </div>
+  </main>
+
+  <section class="container-cuidado">
+    <img class="cuidado-icone" src="/assets/icones/cuidado.png" alt="">
+
+    <div class="cuidado-texto">
+      <h2 class="cuidado-titulo">Curiosidade e cuidado andam juntos.</h2>
+      <p class="cuidado-aviso">Leia o projeto inteiro antes de começar. Crianças devem escolher a atividade com um responsável e ter supervisão adulta. Não ingira misturas. Cortes e perfurações ficam com um adulto.</p>
+    </div>
+  </section>
+
+  <footer class="container-rodape">
+    <div class="rodape-topo">
+      <div class="rodape-marca">
+        <span class="rodape-logo">DIY experimentos caseiros</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/src/js/pages/dados.js"></script>
+  <script src="/src/js/pages/cartoes.js"></script>
+  <script src="/src/js/pages/experimentos.js"></script>
+</body>
+</html>
