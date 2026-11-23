@@ -1,21 +1,21 @@
-const formulario = document.getElementById('formulario');
-const campoNome = document.getElementById('nome');
-const campoEmail = document.getElementById('email');
-const campoSenha = document.getElementById('senha');
-const campoConfirmar = document.getElementById('confirmar');
+let formulario = document.getElementById('formulario');
+let campoNome = document.getElementById('nome');
+let campoEmail = document.getElementById('email');
+let campoSenha = document.getElementById('senha');
+let campoConfirmar = document.getElementById('confirmar');
 
-const erroNome = document.getElementById('erro-nome');
-const erroEmail = document.getElementById('erro-email');
-const erroSenha = document.getElementById('erro-senha');
-const erroConfirmar = document.getElementById('erro-confirmar');
+let erroNome = document.getElementById('erro-nome');
+let erroEmail = document.getElementById('erro-email');
+let erroSenha = document.getElementById('erro-senha');
+let erroConfirmar = document.getElementById('erro-confirmar');
 
-const requisitos = document.getElementsByClassName('requisito');
-const textoForca = document.getElementById('texto-forca');
-const barraForca = document.getElementById('forca');
+let requisitos = document.getElementsByClassName('requisito');
+let textoForca = document.getElementById('texto-forca');
+let barraForca = document.getElementById('forca');
 
 function mostrarForca() {
-  const resultado = avaliarSenha(campoSenha.value);
-  const cumpridos = [resultado.tamanho, resultado.letraMais, resultado.letraMinus, resultado.numero, resultado.especial];
+  let resultado = avaliarSenha(campoSenha.value);
+  let cumpridos = [resultado.tamanho, resultado.letraMais, resultado.letraMinus, resultado.numero, resultado.especial];
   let nivelBarra = 0;
 
   for (let i = 0; i < cumpridos.length; i++) {
@@ -39,25 +39,25 @@ function mostrarForca() {
 }
 
 function conferirNome() {
-  const mensagem = validarNome(campoNome.value);
+  let mensagem = validarNome(campoNome.value);
   mostrarErro(campoNome, erroNome, mensagem);
   return mensagem;
 }
 
 function conferirEmail() {
-  const mensagem = validarEmail(campoEmail.value);
+  let mensagem = validarEmail(campoEmail.value);
   mostrarErro(campoEmail, erroEmail, mensagem);
   return mensagem;
 }
 
 function conferirSenha() {
-  const mensagem = validarSenha(campoSenha.value, campoNome.value, campoEmail.value);
+  let mensagem = validarSenha(campoSenha.value, campoNome.value, campoEmail.value);
   mostrarErro(campoSenha, erroSenha, mensagem);
   return mensagem;
 }
 
 function conferirConfirmacao() {
-  const mensagem = validarConfirmacao(campoSenha.value, campoConfirmar.value);
+  let mensagem = validarConfirmacao(campoSenha.value, campoConfirmar.value);
   mostrarErro(campoConfirmar, erroConfirmar, mensagem);
   return mensagem;
 }
@@ -105,22 +105,35 @@ formulario.addEventListener('submit', (evento) => {
   }
 
   if (!tudoCerto) {
-    const primeiroInvalido = document.getElementsByClassName('campo-entrada-invalido')[0];
+    let primeiroInvalido = document.getElementsByClassName('campo-entrada-invalido')[0];
     if (primeiroInvalido) {
       primeiroInvalido.focus();
     }
     return;
   }
 
-  sessionStorage.removeItem('NOME_COMPLETO');
-  sessionStorage.removeItem('EMAIL');
-  sessionStorage.removeItem('PASSWORD');
-
-  sessionStorage.setItem('NOME_COMPLETO', campoNome.value.trim());
-  sessionStorage.setItem('EMAIL', campoEmail.value.trim().toLowerCase());
-  sessionStorage.setItem('PASSWORD', campoSenha.value);
-
-  window.location.href = '/pages/login/html/login.html';
+  fetch('/usuarios/cadastrar', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      nome: campoNome.value.trim(),
+      email: campoEmail.value.trim().toLowerCase(),
+      senha: campoSenha.value,
+    }),
+  })
+    .then(function (resposta) {
+      if (resposta.status === 201) {
+        window.location.href = '/src/pages/login.html';
+      } else if (resposta.status === 409) {
+        mostrarErro(campoEmail, erroEmail, 'Este e-mail já está cadastrado.');
+        campoEmail.focus();
+      } else {
+        mostrarErro(campoEmail, erroEmail, 'Não foi possível cadastrar agora. Tente de novo.');
+      }
+    })
+    .catch(function () {
+      mostrarErro(campoEmail, erroEmail, 'Sem conexão com o servidor. Tente de novo.');
+    });
 });
 
 mostrarForca();
