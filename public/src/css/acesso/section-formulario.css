@@ -1,0 +1,76 @@
+.formulario {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.formulario > .campo:first-child {
+  margin-top: 0;
+}
+
+.campo-rotulo {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  color: var(--escuro);
+}
+
+.campo-caixa {
+  position: relative;
+}
+
+.campo-entrada {
+  width: 100%;
+  height: 52px;
+  padding: 0 16px;
+  background: var(--fundo);
+  border: 1px solid var(--borda);
+  border-radius: 0;
+  font-family: var(--fonte-texto);
+  font-size: 14px;
+  color: var(--escuro);
+}
+
+.campo-entrada::placeholder {
+  color: var(--cinza);
+  opacity: 1;
+}
+
+.campo-entrada-senha {
+  padding-right: 96px;
+}
+
+.campo-mostrar {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+  padding: 0;
+  background: none;
+  border: 0;
+  transform: translateY(-50%);
+  font-family: var(--fonte-texto);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--azul);
+  cursor: pointer;
+}
+
+.botao-acesso {
+  height: 52px;
+  margin-top: 20px;
+  background: var(--azul);
+  border: 1px solid var(--escuro);
+  box-shadow: 3px 3px 0 var(--escuro);
+  font-family: var(--fonte-texto);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--papel);
+  cursor: pointer;
+}
