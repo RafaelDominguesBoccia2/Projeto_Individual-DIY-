@@ -1,0 +1,98 @@
+.dica-passos {
+  margin-bottom: 14px;
+  font: 10px "IBM Plex Mono", monospace;
+  color: var(--muted);
+}
+
+.passos {
+  display: grid;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.passo label {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 14px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  cursor: pointer;
+}
+
+.passo input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.passo .n {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 32px;
+  height: 32px;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  font: 400 14px Silkscreen, monospace;
+}
+
+.passo input:checked + .n {
+  background: var(--blue);
+  color: #fff;
+}
+
+.passo input:focus-visible + .n {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.passo .txt {
+  display: grid;
+  gap: 4px;
+}
+
+.passo .txt b {
+  font: 400 13px Silkscreen,monospace;
+}
+
+.passo .txt span {
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.passo input:checked ~ .txt {
+  opacity: .55;
+}
+
+.lista-tentar {
+  display: grid;
+  gap: 8px;
+  margin: 16px 0 0;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+
+.bloco h3.subtitulo {
+  margin-top: 20px;
+  font: 400 12px Silkscreen,monospace;
+}
+
+.painel p.falta {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  color: var(--red);
+  font-weight: 600;
+}
+
+.painel .btn.azul {
+  margin-top: 16px;
+}
