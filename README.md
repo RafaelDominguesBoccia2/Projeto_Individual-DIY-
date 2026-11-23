@@ -65,25 +65,51 @@ Cada experimento tem a sua própria página: [ponte](public/src/pages/projeto-po
 ## 📁 Estrutura
 
 ```
+app.js
+src/
+├── controllers/   regras de cada rota
+├── database/      config.js (conexão) e script.sql (banco)
+├── models/        comandos SQL
+└── routes/        usuarios, dashboard, feitos e estoque
 public/
 ├── index.html
 ├── style.css
 ├── assets/
-│   ├── fontes/      
+│   ├── fontes/      Silkscreen, IBM Plex Mono e IconesPixel
 │   ├── icones/
 │   └── imagens/
 └── src/
-    ├── css/         
+    ├── css/         uma pasta por página, com um arquivo por seção
     ├── js/pages/
     └── pages/
 ```
 
 ## ▶️ Como rodar
 
+1. No MySQL Workbench, execute `src/database/script.sql`.
+2. Copie `.env.example` para `.env.dev` e preencha `DB_USER` e `DB_PASSWORD`.
+3. No terminal:
+
 ```
 npm install
 npm start
 ```
+
+4. Abra `http://localhost:3333`.
+
+## 🔌 Rotas da API
+
+| Método | Rota | O que faz |
+| --- | --- | --- |
+| POST | `/usuarios/cadastrar` | Cria a conta e o estoque inicial |
+| POST | `/usuarios/autenticar` | Login |
+| GET | `/dashboard/:idUsuario` | KPIs, rosca e últimas descobertas |
+| GET | `/feitos/:idUsuario` | Projetos feitos |
+| POST | `/feitos/:idUsuario/:codigo` | Marca um projeto como feito |
+| DELETE | `/feitos/:idUsuario/:codigo` | Desmarca um projeto |
+| GET | `/estoque/:idUsuario` | Materiais do usuário |
+| GET | `/estoque/:idUsuario/possiveis` | Experimentos que o estoque permite |
+| PUT | `/estoque/:idUsuario/:codigo` | Soma ou subtrai do estoque (`{ "variacao": -10 }`) |
 
 ---
 
