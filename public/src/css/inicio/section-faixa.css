@@ -1,0 +1,6 @@
+.container-faixa {
+  height: 56px;
+  background: var(--amarelo);
+  border-top: 2px solid var(--escuro);
+  border-bottom: 2px solid var(--escuro);
+}
