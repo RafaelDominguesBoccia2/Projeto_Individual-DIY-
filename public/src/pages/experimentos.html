@@ -5,18 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Experimentos · DIY experimentos caseiros</title>
   <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/comum/section-escala.css">
   <link rel="stylesheet" href="/src/css/comum/section-navegacao.css">
   <link rel="stylesheet" href="/src/css/comum/section-base.css">
   <link rel="stylesheet" href="/src/css/comum/section-topo.css">
   <link rel="stylesheet" href="/src/css/comum/section-botoes.css">
-  <link rel="stylesheet" href="/src/css/comum/section-busca.css">
   <link rel="stylesheet" href="/src/css/comum/section-cartoes.css">
   <link rel="stylesheet" href="/src/css/comum/section-feito.css">
   <link rel="stylesheet" href="/src/css/comum/section-paineis.css">
   <link rel="stylesheet" href="/src/css/comum/section-experimento.css">
   <link rel="stylesheet" href="/src/css/comum/section-cuidado.css">
   <link rel="stylesheet" href="/src/css/comum/section-rodape.css">
-  <link rel="stylesheet" href="/src/css/comum/section-cuidado-fino.css">
   <link rel="stylesheet" href="/src/css/comum/section-responsivo.css">
   <link rel="stylesheet" href="/src/css/comum/section-icones.css">
   <link rel="stylesheet" href="/src/css/experimentos/section-bancada.css">
@@ -55,23 +54,15 @@
       <div class="titulo">
         <div>
           <h1>Experimentos <span class="tag">06 IDEIAS</span></h1>
-          <p class="sub">Descubra o que é possível criar com o que você já tem. Ciência, arte e engenharia do jeito caseiro.</p>
+          <p class="sub">Descubra o que é possível criar com o que você já tem. Engenharia, física e química do jeito caseiro.</p>
         </div>
       </div>
     </section>
 
-    <div class="barra">
-      <label class="busca">
-        <i class="px px-busca"></i>
-        <input id="busca" type="search" placeholder='Buscar experimento... tente "ponte", "cores"' aria-label="Buscar experimento">
-        <kbd>/</kbd>
-      </label>
-    </div>
-
     <div class="grid-exp">
       <aside>
         <section class="bancada">
-          <h2>O que você tem? <em id="n-mat">12</em></h2>
+          <h2>O que você tem? <em id="n-mat">10</em></h2>
           <ul id="bancada"></ul>
           <p class="t">Meus utensílios</p>
           <div class="chips">
@@ -89,10 +80,9 @@
           <h2>Suas possibilidades <span class="tag" id="qtd-exp">6 EXPERIMENTOS</span></h2>
           <div class="filtros" id="filtros">
             <button class="on" type="button" data-cat="TODOS">TODOS</button>
-            <button type="button" data-cat="CIÊNCIA">CIÊNCIA</button>
-            <button type="button" data-cat="ARTE">ARTE</button>
             <button type="button" data-cat="ENGENHARIA">ENGENHARIA</button>
             <button type="button" data-cat="FÍSICA">FÍSICA</button>
+            <button type="button" data-cat="QUÍMICA">QUÍMICA</button>
           </div>
         </div>
 
@@ -121,6 +111,7 @@
     </div>
   </footer>
 
+  <script src="/src/js/pages/sessao.js"></script>
   <script src="/src/js/pages/dados.js"></script>
   <script src="/src/js/pages/cartoes.js"></script>
   <script src="/src/js/pages/experimentos.js"></script>
