@@ -1,0 +1,48 @@
+.container-pagina-acesso {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 1120px;
+  line-height: 1.45;
+}
+
+.container-nav-acesso {
+  zoom: var(--escala);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  height: 88px;
+  padding: 0 64px;
+  font: 16px/normal Inter, sans-serif;
+  background: var(--papel);
+  border-bottom: 2px solid var(--escuro);
+}
+
+.acesso-marca {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.acesso-logo {
+  font-family: var(--fonte-pixel);
+  font-size: 40px;
+  letter-spacing: -0.075em;
+  color: var(--azul);
+  white-space: nowrap;
+}
+
+.acesso-voltar {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--azul);
+  white-space: nowrap;
+}
+
+.container-acesso {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: flex-start;
+}
