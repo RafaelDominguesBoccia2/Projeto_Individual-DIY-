@@ -5,17 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Meus materiais · DIY experimentos caseiros</title>
   <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/comum/section-escala.css">
   <link rel="stylesheet" href="/src/css/comum/section-navegacao.css">
   <link rel="stylesheet" href="/src/css/comum/section-base.css">
   <link rel="stylesheet" href="/src/css/comum/section-topo.css">
   <link rel="stylesheet" href="/src/css/comum/section-botoes.css">
-  <link rel="stylesheet" href="/src/css/comum/section-busca.css">
   <link rel="stylesheet" href="/src/css/comum/section-cartoes.css">
   <link rel="stylesheet" href="/src/css/comum/section-paineis.css">
   <link rel="stylesheet" href="/src/css/comum/section-experimento.css">
   <link rel="stylesheet" href="/src/css/comum/section-cuidado.css">
   <link rel="stylesheet" href="/src/css/comum/section-rodape.css">
-  <link rel="stylesheet" href="/src/css/comum/section-cuidado-fino.css">
   <link rel="stylesheet" href="/src/css/comum/section-responsivo.css">
   <link rel="stylesheet" href="/src/css/comum/section-icones.css">
   <link rel="stylesheet" href="/src/css/materiais/section-lista.css">
@@ -53,25 +52,17 @@
       <p class="caminho"><a href="/src/pages/meus-materiais.html">Minha bancada</a> / Meus materiais</p>
       <div class="titulo">
         <div>
-          <h1>Meus materiais <span class="tag" id="total">12 ITENS</span></h1>
+          <h1>Meus materiais <span class="tag" id="total">10 ITENS</span></h1>
           <p class="sub">Sua próxima ideia começa com o que você já tem. Organize, ajuste e experimente.</p>
         </div>
       </div>
       <p class="status"><b>●</b> <b>INVENTÁRIO SALVO</b> · As quantidades são salvas automaticamente.</p>
     </section>
 
-    <div class="barra">
-      <label class="busca">
-        <i class="px px-busca"></i>
-        <input id="busca" type="search" placeholder="Buscar no meu inventário..." aria-label="Buscar no meu inventário">
-        <kbd>/</kbd>
-      </label>
-    </div>
-
     <div class="grid-main">
       <section>
         <div class="cab-col">
-          <b id="cont">SEU INVENTÁRIO · 12 MATERIAIS</b>
+          <b id="cont">SEU INVENTÁRIO · 10 MATERIAIS</b>
           <span>Ajuste com − e + ou edite o número</span>
         </div>
         <div class="cards" id="materiais"></div>
@@ -129,6 +120,7 @@
     </div>
   </footer>
 
+  <script src="/src/js/pages/sessao.js"></script>
   <script src="/src/js/pages/dados.js"></script>
   <script src="/src/js/pages/materiais.js"></script>
 </body>
