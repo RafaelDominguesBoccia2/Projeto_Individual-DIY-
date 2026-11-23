@@ -1,0 +1,11 @@
+.secao {
+  font: 400 9px Silkscreen,monospace;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 0 0 20px;
+}
+
+.secao.verde {
+  color: var(--green);
+}
