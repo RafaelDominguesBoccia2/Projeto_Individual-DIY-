@@ -1,0 +1,13 @@
+.campo-erro {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--vermelho);
+}
+
+.campo-erro:empty {
+  display: none;
+}
+
+.campo-entrada-invalido {
+  border-color: var(--vermelho);
+}
