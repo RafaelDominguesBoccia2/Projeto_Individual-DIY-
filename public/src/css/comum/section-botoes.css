@@ -1,0 +1,33 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: var(--card);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  padding: 14px 22px;
+  font: 500 14px Inter,sans-serif;
+  box-shadow: 4px 4px 0 var(--ink);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn.azul {
+  background: var(--blue);
+  color: #fff;
+  width: 100%;
+  box-shadow: 4px 4px 0 var(--ink);
+}
+
+.btn.vazado {
+  box-shadow: none;
+  color: var(--blue);
+  width: 100%;
+  font-weight: 700;
+}
+
+.btn:hover {
+  transform: translate(2px,2px);
+  box-shadow: 2px 2px 0 var(--ink);
+}
