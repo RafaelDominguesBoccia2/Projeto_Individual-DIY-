@@ -1,4 +1,5 @@
 @import url("src/css/global.css");
+@import url("src/css/comum/section-escala.css");
 @import url("src/css/comum/section-icones.css");
 @import url("src/css/comum/section-navegacao.css");
 @import url("src/css/inicio/section-base.css");
