@@ -1,0 +1,80 @@
+.container-hero,
+.container-maker,
+.container-proximo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.identificador {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  color: var(--azul);
+}
+
+.identificador-marcador {
+  width: 8px;
+  height: 8px;
+  background: var(--azul);
+}
+
+.identificador-claro {
+  color: var(--papel);
+}
+
+.identificador-claro .identificador-marcador {
+  background: var(--amarelo);
+}
+
+.titulo-secao {
+  font-family: var(--fonte-pixel);
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -1px;
+  color: var(--escuro);
+}
+
+.texto-corrente,
+.hero-descricao,
+.experimentos-descricao,
+.card-descricao {
+  line-height: 1.7;
+  color: var(--cinza);
+}
+
+.texto-corrente {
+  font-size: 16px;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 50px;
+  padding: 0 20px;
+  border: 2px solid var(--escuro);
+  box-shadow: 5px 5px 0 var(--escuro);
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.botao-azul {
+  background: var(--azul);
+  color: var(--branco);
+}
+
+.botao-claro {
+  background: var(--papel);
+  color: var(--azul);
+}
+
+.botao-seta {
+  margin: 0 2.5px;
+}
