@@ -1,0 +1,22 @@
+@media (max-width: 760px) {
+  .container-graficos {
+    grid-template-columns: 1fr;
+  }
+
+  .container-indicadores {
+    grid-template-columns: 1fr;
+  }
+
+  .uso {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .rosca {
+    align-self: center;
+  }
+
+  .titulo {
+    flex-wrap: wrap;
+  }
+}
