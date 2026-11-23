@@ -1,0 +1,68 @@
+.grid-main {
+  display: grid;
+  grid-template-columns: 1fr 344px;
+  gap: 32px;
+  align-items: start;
+}
+
+.cab-col {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font: 400 11px Silkscreen,monospace;
+  margin-bottom: 24px;
+}
+
+.cab-col span {
+  color: var(--blue);
+  font-size: 11px;
+}
+
+.card {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card p.d {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.leg {
+  display: flex;
+  justify-content: space-between;
+  font: 9px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+
+.qtd {
+  display: flex;
+  border: 1px solid var(--ink);
+  height: 42px;
+}
+
+.qtd button {
+  width: 40px;
+  border: 0;
+  background: var(--paper);
+  font: 22px "IBM Plex Mono",monospace;
+  cursor: pointer;
+  color: var(--ink);
+}
+
+.qtd button:first-child {
+  border-right: 1px solid var(--ink);
+}
+
+.qtd button:last-child {
+  border-left: 1px solid var(--ink);
+  background: var(--lav);
+  color: var(--blue);
+}
