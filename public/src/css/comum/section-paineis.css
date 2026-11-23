@@ -1,0 +1,94 @@
+.lateral {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.painel {
+  background: var(--lav);
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+  padding: 24px;
+}
+
+.painel .modo {
+  font: 10px "IBM Plex Mono",monospace;
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.painel .num {
+  font: 400 72px/1 Silkscreen,monospace;
+  color: var(--blue);
+  margin: 24px 0 10px;
+}
+
+.painel h2 {
+  font: 400 18px/1.4 Silkscreen,monospace;
+}
+
+.painel p {
+  color: var(--muted);
+  font-size: 12px;
+  margin: 12px 0;
+}
+
+.painel ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 22px;
+  display: grid;
+  gap: 10px;
+  font-size: 12px;
+}
+
+.painel li::before {
+  content: "✓ ";
+  color: var(--green);
+  font-weight: 700;
+}
+
+.dica {
+  background: var(--card);
+  border: 2px solid var(--line);
+  padding: 18px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.dica h4 {
+  color: var(--ink);
+  font: 400 12px Silkscreen,monospace;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.dica h4 i {
+  background: var(--yellow);
+  border: 1px solid var(--ink);
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  font: 700 12px "IBM Plex Mono",monospace;
+  font-style: normal;
+}
+
+.falta {
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.bancada li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 13px;
+  font-weight: 600;
+}
