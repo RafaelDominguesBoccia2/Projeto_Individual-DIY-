@@ -1,0 +1,29 @@
+.tabela-descobertas {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.tabela-descobertas th {
+  font: 600 10px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--line);
+}
+
+.tabela-descobertas td {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.projeto {
+  font-weight: 600;
+}
+
+.indice {
+  display: inline-block;
+  width: 36px;
+  font: 600 11px "IBM Plex Mono",monospace;
+  color: var(--blue);
+}
