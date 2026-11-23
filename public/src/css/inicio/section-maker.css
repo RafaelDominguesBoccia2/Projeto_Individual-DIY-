@@ -1,0 +1,93 @@
+.container-maker {
+  gap: 72px;
+  padding: 56px 64px;
+  background: var(--azul);
+}
+
+.maker-texto,
+.proximo-texto {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.maker-texto {
+  width: 700px;
+}
+
+.maker-titulo {
+  line-height: 1.3;
+  color: var(--papel);
+}
+
+.maker-paragrafo {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--papel);
+}
+
+.maker-ciclo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  width: 540px;
+}
+
+.container-transformacao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  height: 144px;
+}
+
+.maker-material,
+.maker-resultado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 144px;
+}
+
+.maker-material {
+  background: var(--lavanda);
+}
+
+.maker-resultado {
+  background: var(--verde);
+}
+
+.maker-seta {
+  margin-right: 9px;
+}
+
+.maker-legenda {
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  line-height: 1.8;
+  text-align: center;
+  color: var(--amarelo);
+}
+
+.material-grade {
+  display: grid;
+  grid-template-columns: 66px 14px 66px;
+  grid-template-rows: 66px 66px;
+  align-items: center;
+  justify-items: center;
+  gap: 4px 0;
+}
+
+.material-item {
+  width: 66px;
+  height: 66px;
+  image-rendering: pixelated;
+}
+
+.material-soma {
+  font-family: var(--fonte-pixel);
+  font-size: 16px;
+  color: var(--azul);
+}
