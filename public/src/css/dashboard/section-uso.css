@@ -1,0 +1,111 @@
+.container-graficos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.bloco-grafico {
+  background: var(--card);
+  border: 2px solid var(--line);
+  padding: 24px 28px;
+}
+
+.bloco-titulo {
+  font: 400 16px/1.4 Silkscreen,monospace;
+  letter-spacing: .04em;
+}
+
+.bloco-descricao {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 6px 0 16px;
+}
+
+.bloco-nota {
+  background: var(--lav);
+  font: 11px "IBM Plex Mono",monospace;
+  padding: 10px 12px;
+  margin-top: 16px;
+}
+
+.uso {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.rosca {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 210px;
+  height: 210px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: conic-gradient(var(--blue) 0 50%, var(--yellow) 50% 75%, var(--green) 75% 100%);
+}
+
+.rosca-centro {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  width: 110px;
+  height: 110px;
+  border: 2px solid var(--ink);
+  border-radius: 50%;
+  background: var(--card);
+}
+
+.rosca-total {
+  font: 400 28px/1 Silkscreen,monospace;
+}
+
+.rosca-legenda {
+  font: 10px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.tabela-uso {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.tabela-uso th {
+  font: 600 10px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--line);
+}
+
+.tabela-uso td {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.tabela-uso th:not(:first-child),
+.tabela-uso td:not(:first-child) {
+  text-align: right;
+}
+
+.marca {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  border: 1px solid var(--ink);
+}
+
+.marca-engenharia {
+  background: var(--blue);
+}
+
+.marca-fisica {
+  background: var(--yellow);
+}
+
+.marca-quimica {
+  background: var(--green);
+}

@@ -1,0 +1,79 @@
+.grid-exp {
+  display: grid;
+  grid-template-columns: 296px minmax(0,1fr);
+  gap: 32px;
+  align-items: start;
+}
+
+.bancada {
+  background: var(--card);
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+  padding: 20px;
+}
+
+.bancada h2 {
+  font: 400 14px Silkscreen,monospace;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.bancada h2 em {
+  background: var(--lav);
+  font: 600 11px "IBM Plex Mono",monospace;
+  padding: 3px 7px;
+  font-style: normal;
+}
+
+.bancada ul {
+  margin: 0;
+  padding: 0;
+}
+
+.bancada li img {
+  flex: none;
+  width: 39px;
+  height: 39px;
+  margin-right: 12px;
+  image-rendering: pixelated;
+}
+
+.bancada li > span {
+  flex: 1;
+}
+
+.bancada li small {
+  display: block;
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.bancada li code {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 2px 7px;
+  font: 600 10px "IBM Plex Mono",monospace;
+}
+
+.bancada .t {
+  font: 600 9px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  margin: 18px 0 8px;
+}
+
+.bancada .chips {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  flex-wrap: wrap;
+}
+
+.bancada .chip {
+  background: var(--greenbg);
+}
+
+.bancada .status {
+  text-align: center;
+}

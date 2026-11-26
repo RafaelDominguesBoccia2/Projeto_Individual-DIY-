@@ -1,0 +1,54 @@
+.topo {
+  padding: 40px 0 32px;
+}
+
+.caminho {
+  font: 11px "IBM Plex Mono",monospace;
+  color: var(--muted);
+}
+
+.caminho a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+  gap: 24px;
+}
+
+h1 {
+  font: 400 44px/1.1 Silkscreen,monospace;
+  letter-spacing: .06em;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: var(--yellow);
+  border: 2px solid var(--ink);
+  font: 400 13px Silkscreen,monospace;
+  padding: 4px 10px;
+  letter-spacing: 0;
+}
+
+.sub {
+  color: var(--muted);
+  font-size: 16px;
+  margin-top: 12px;
+}
+
+.status {
+  font: 10px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  margin-top: 16px;
+}
+
+.status b {
+  color: var(--green);
+}

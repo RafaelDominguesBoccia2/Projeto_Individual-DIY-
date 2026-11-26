@@ -1,0 +1,38 @@
+.vazio {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  padding: 56px 24px;
+  background: var(--card);
+  border: 2px dashed var(--ink);
+  text-align: center;
+}
+
+.vazio .px-check {
+  font-size: 30px;
+  color: var(--blue);
+}
+
+.vazio h2 {
+  font: 400 24px Silkscreen, monospace;
+  letter-spacing: .06em;
+}
+
+.vazio p {
+  max-width: 460px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.vazio-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 8px;
+}
+
+.vazio .btn.azul {
+  width: auto;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cadastro · DIY experimentos caseiros</title>
+  <link rel="stylesheet" href="/src/css/global.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-pagina.css">
+  <link rel="stylesheet" href="/src/css/cadastro/section-main.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-cartao.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-formulario.css">
+  <link rel="stylesheet" href="/src/css/cadastro/section-requisitos.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-ilustracoes.css">
+  <link rel="stylesheet" href="/src/css/comum/section-rodape.css">
+  <link rel="stylesheet" href="/src/css/comum/section-cuidado-fino.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-responsivo.css">
+  <link rel="stylesheet" href="/src/css/acesso/section-erros.css">
+</head>
+<body>
+  <div class="container-pagina-acesso">
+
+    <header class="container-nav-acesso">
+      <a class="acesso-marca" href="/index.html">
+        <span class="acesso-logo">DIY experimentos caseiros</span>
+      </a>
+      <a class="acesso-voltar" href="/index.html">← Voltar para Home</a>
+    </header>
+
+    <main class="container-acesso container-acesso-cadastro">
+      <section class="cartao">
+        <p class="cartao-logo">DIY</p>
+        <p class="cartao-assinatura">EXPERIMENTOS CASEIROS</p>
+        <h1 class="cartao-titulo">Crie sua conta</h1>
+        <p class="cartao-descricao">Dê espaço à sua próxima descoberta.</p>
+        <div class="cartao-divisor"></div>
+
+        <form class="formulario" id="formulario" novalidate>
+          <div class="campo">
+            <label class="campo-rotulo" for="nome">Nome completo</label>
+            <div class="campo-caixa">
+              <input class="campo-entrada" id="nome" name="nome" type="text" placeholder="Como você se chama?" autocomplete="name">
+            </div>
+            <p class="campo-erro" id="erro-nome"></p>
+          </div>
+
+          <div class="campo">
+            <label class="campo-rotulo" for="email">E-mail</label>
+            <div class="campo-caixa">
+              <input class="campo-entrada" id="email" name="email" type="email" placeholder="seunome@exemplo.com" autocomplete="email">
+            </div>
+            <p class="campo-erro" id="erro-email"></p>
+          </div>
+
+          <div class="campo">
+            <label class="campo-rotulo" for="senha">Senha</label>
+            <div class="campo-caixa">
+              <input class="campo-entrada campo-entrada-senha" id="senha" name="senha" type="password" placeholder="Crie uma senha" autocomplete="new-password">
+              <button class="campo-mostrar" data-alvo="senha" type="button" aria-pressed="false" aria-label="Mostrar ou ocultar senha">Mostrar</button>
+            </div>
+            <p class="campo-erro" id="erro-senha"></p>
+          </div>
+
+          <div class="container-requisitos">
+            <div class="requisitos-topo">
+              <p class="requisitos-titulo">SUA SENHA DEVE TER:</p>
+              <p class="requisitos-forca" id="texto-forca" aria-live="polite"></p>
+            </div>
+            <ul class="requisitos-lista">
+              <li class="requisito">
+                <span class="requisito-numero">1</span>
+                <span class="requisito-texto">No mínimo 8 caracteres</span>
+              </li>
+              <li class="requisito">
+                <span class="requisito-numero">2</span>
+                <span class="requisito-texto">Pelo menos 1 letra maiúscula</span>
+              </li>
+              <li class="requisito">
+                <span class="requisito-numero">3</span>
+                <span class="requisito-texto">Pelo menos 1 letra minúscula</span>
+              </li>
+              <li class="requisito">
+                <span class="requisito-numero">4</span>
+                <span class="requisito-texto">Pelo menos 1 número</span>
+              </li>
+              <li class="requisito">
+                <span class="requisito-numero">5</span>
+                <span class="requisito-texto">Pelo menos 1 caractere especial</span>
+              </li>
+            </ul>
+            <div class="forca" id="forca" data-nivel="0">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label class="campo-rotulo" for="confirmar">Confirmar senha</label>
+            <div class="campo-caixa">
+              <input class="campo-entrada campo-entrada-senha" id="confirmar" name="confirmar" type="password" placeholder="Repita a senha" autocomplete="new-password">
+              <button class="campo-mostrar" data-alvo="confirmar" type="button" aria-pressed="false" aria-label="Mostrar ou ocultar senha">Mostrar</button>
+            </div>
+            <p class="campo-erro" id="erro-confirmar"></p>
+          </div>
+
+          <button class="botao-acesso" type="submit">Criar conta →</button>
+        </form>
+
+        <p class="cartao-alternativa">Já tem uma conta?</p>
+        <a class="cartao-link" href="/src/pages/login.html">Fazer login</a>
+      </section>
+    </main>
+
+    <div class="ilustracao ilustracao-esquerda">
+      <img class="ilustracao-arte" src="/assets/imagens/album-garrafa.png" width="102.4" height="160" alt="">
+      <span class="ilustracao-legenda">UM MATERIAL</span>
+    </div>
+
+    <div class="ilustracao ilustracao-direita">
+      <img class="ilustracao-arte" src="/assets/imagens/hero-foguete.png" width="94.81" height="160" alt="">
+      <span class="ilustracao-legenda">UMA POSSIBILIDADE</span>
+    </div>
+
+    <footer class="container-rodape">
+      <div class="rodape-topo">
+        <div class="rodape-marca">
+          <span class="rodape-logo">DIY experimentos caseiros</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="/src/js/pages/acesso.js"></script>
+  <script src="/src/js/pages/validacoes.js"></script>
+  <script src="/src/js/pages/cadastro.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+.container-hero {
+  gap: 48px;
+  padding: 64px;
+}
+
+.hero-texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 26px;
+  width: 632px;
+  flex-shrink: 0;
+}
+
+.hero-titulo {
+  font-family: var(--fonte-pixel);
+  font-size: 50px;
+  line-height: 1.18;
+  letter-spacing: -2px;
+  color: var(--escuro);
+}
+
+.hero-descricao {
+  width: 570px;
+  max-width: 100%;
+  font-size: 17px;
+}
+
+.hero-acoes {
+  display: flex;
+  gap: 16px;
+}
+
+.container-bancada {
+  display: flex;
+  flex-direction: column;
+  width: 632px;
+  height: 456px;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: var(--lavanda);
+  border: 2px solid var(--escuro);
+  box-shadow: 5px 5px 0 var(--escuro);
+}
+
+.bancada-cabecalho,
+.bancada-legenda {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.bancada-cabecalho {
+  height: 40px;
+  border-bottom: 2px solid var(--escuro);
+  font-family: var(--fonte-mono);
+}
+
+.bancada-titulo,
+.bancada-texto {
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+}
+
+.bancada-titulo {
+  color: var(--azul);
+}
+
+.bancada-texto {
+  color: var(--escuro);
+}
+
+.bancada-oficina {
+  position: relative;
+  height: 362px;
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--azul) 8%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--azul) 8%, transparent) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.bancada-garrafa,
+.bancada-foguete,
+.bancada-ideia,
+.bancada-seta,
+.bancada-etiqueta {
+  position: absolute;
+}
+
+.bancada-garrafa { left: 74px; top: 46px; }
+.bancada-foguete { left: 368px; top: 38px; }
+.bancada-ideia { left: 463px; top: 30px; }
+.bancada-seta { left: 263px; top: 138px; }
+
+.bancada-etiqueta {
+  left: 127px;
+  top: 286px;
+  padding: 9px;
+  background: var(--amarelo);
+  border: 2px solid var(--escuro);
+  transform: rotate(-3deg);
+  font-family: var(--fonte-mono);
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.bancada-legenda {
+  height: 50px;
+  background: var(--papel);
+  border-top: 2px solid var(--escuro);
+}

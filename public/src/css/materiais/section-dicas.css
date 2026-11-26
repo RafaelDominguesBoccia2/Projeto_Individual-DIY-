@@ -1,0 +1,43 @@
+.dica.amarela {
+  background: var(--yellow);
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.vira {
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  background: var(--paper);
+}
+
+.vira li {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+.vira li:last-child {
+  border-bottom: 0;
+}
+
+.vira b {
+  color: var(--ink);
+  font-size: 12px;
+}
+
+.vira span {
+  font: 10px "IBM Plex Mono",monospace;
+  text-align: right;
+}
+
+.lema {
+  font: 10px "IBM Plex Mono",monospace;
+  color: var(--muted);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 0 12px;
+}

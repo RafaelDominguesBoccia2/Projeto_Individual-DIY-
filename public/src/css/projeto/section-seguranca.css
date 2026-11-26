@@ -1,0 +1,35 @@
+.aviso-seg {
+  padding: 20px;
+  background: #fbf1c9;
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.aviso-seg.alerta {
+  background: var(--redbg);
+}
+
+.aviso-seg h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  font: 400 12px Silkscreen,monospace;
+}
+
+.aviso-seg ul {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 18px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.aviso-seg a {
+  display: inline-block;
+  margin-top: 14px;
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 700;
+}

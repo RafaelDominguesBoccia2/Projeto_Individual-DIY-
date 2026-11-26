@@ -1,0 +1,28 @@
+.px-lema::before {
+  content: "\e004";
+}
+
+.px-lema {
+  font-size: 28px;
+}
+
+.dica.lema {
+  align-items: center;
+  gap: 12px;
+}
+
+.qtd input {
+  width: 72px;
+  border: 0;
+  background: none;
+  font: 400 18px Silkscreen,monospace;
+  text-align: center;
+  color: var(--ink);
+  -moz-appearance: textfield;
+}
+
+.qtd input::-webkit-outer-spin-button,
+.qtd input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}

@@ -1,0 +1,108 @@
+.px {
+  display: inline-block;
+  flex: none;
+  width: 1em;
+  height: 1em;
+  font: normal 16px/1 "Icones Pixel";
+  vertical-align: -.12em;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: none;
+}
+
+.px-painel::before {
+  content: "\e005";
+}
+
+.px-painel {
+  font-size: 18px;
+}
+
+.px-ver::before {
+  content: "\e008";
+}
+
+.px-ver {
+  font-size: 18px;
+}
+
+.px-seg::before {
+  content: "\e007";
+}
+
+.px-seg {
+  font-size: 24px;
+}
+
+.px-check::before {
+  content: "\e003";
+}
+
+.px-check {
+  font-size: 10px;
+}
+
+.px-x::before {
+  content: "\e009";
+}
+
+.px-x {
+  font-size: 10px;
+}
+
+.px-relogio::before {
+  content: "\e006";
+}
+
+.px-relogio {
+  font-size: 12px;
+}
+
+.px-feito::before {
+  content: "\e00a";
+}
+
+.px-feito {
+  font-size: 16px;
+}
+
+.painel li::before {
+  content: "\e003";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 8px;
+  font: normal 10px/1 "Icones Pixel";
+  color: var(--green);
+}
+
+.btn .px {
+  font-size: 16px;
+}
+
+.chip .px,
+.sup .px,
+.falta .px {
+  margin-right: 6px;
+}
+
+.meta .px {
+  margin-right: 4px;
+}
+
+.ilus img {
+  width: auto;
+  height: auto;
+  image-rendering: pixelated;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+.painel li {
+  list-style: none;
+}
+
+[hidden] {
+  display: none !important;
+}

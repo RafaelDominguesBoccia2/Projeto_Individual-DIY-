@@ -1,0 +1,33 @@
+.ilustracao {
+  position: absolute;
+  top: 410px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 214px;
+  height: 238px;
+  padding-top: 26px;
+  border: 1px solid var(--borda);
+}
+
+.ilustracao-esquerda {
+  left: calc(50% - 594px);
+  background: var(--lavanda);
+}
+
+.ilustracao-direita {
+  left: calc(50% + 380px);
+  background: var(--amarelo);
+}
+
+.ilustracao-arte {
+  height: 160px;
+}
+
+.ilustracao-legenda {
+  margin-top: 18px;
+  font-family: var(--fonte-mono);
+  font-size: 10px;
+  text-align: center;
+  color: var(--escuro);
+}

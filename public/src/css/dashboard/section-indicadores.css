@@ -1,0 +1,47 @@
+.container-indicadores {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.indicador {
+  background: var(--card);
+  border: 2px solid var(--line);
+  padding: 20px 24px;
+}
+
+.indicador-linha {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.indicador-numero {
+  flex: none;
+  font: 400 52px/1 Silkscreen,monospace;
+  color: var(--ink);
+}
+
+.indicador-rotulo {
+  font: 700 18px/1.3 "IBM Plex Mono",monospace;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+
+.indicador-nota {
+  font: 500 14px "IBM Plex Mono",monospace;
+  color: var(--green);
+  margin-top: 14px;
+}
+
+.indicador-destaque {
+  background: var(--lav);
+  border-color: var(--ink);
+  box-shadow: var(--shadow);
+}
+
+.indicador-destaque .indicador-numero {
+  color: var(--blue);
+}
