@@ -1,9 +1,0 @@
-@media (max-width: 1100px) {
-  .grid-proj {
-    grid-template-columns: 1fr;
-  }
-
-  .outros-links {
-    grid-template-columns: 1fr;
-  }
-}
